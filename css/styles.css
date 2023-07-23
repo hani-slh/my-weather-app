@@ -1,0 +1,113 @@
+.body {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  padding-top: 20px;
+  background-color: #f8f4ff;
+  border: 2px solid #9f9da3;
+  border-radius: 30px;
+}
+.card-body {
+  background-color: #f8f4ff;
+}
+#searchInput {
+  border-radius: 8px;
+  width: 350px;
+}
+#newBtn {
+  border-radius: 15px;
+  margin-left: 10px;
+}
+#city {
+  font-size: 50px;
+  text-align: left;
+  padding-left: 110px;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+.today {
+  text-align: left;
+  padding-left: 115px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+#detail {
+  text-align: left;
+  padding-left: 115px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+#day {
+  text-align: left;
+  padding-left: 115px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+#description {
+  text-align: left;
+  padding-left: 115px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.temperature {
+  text-align: left;
+  padding-left: 55px;
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+.degree {
+  text-decoration: none;
+  position: relative;
+  top: -15px;
+  font-size: 18px;
+}
+.thursday,
+.friday,
+.saturday,
+.sunday,
+.monday,
+.tuesday {
+  width: 300px;
+  height: 35px;
+  border: 1px solid #9f9da3;
+  border-radius: 20px;
+  line-height: 30px;
+  border-width: 2px;
+}
+.thursday:hover,
+.friday:hover,
+.saturday:hover,
+.sunday:hover,
+.monday:hover,
+.tuesday:hover {
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+.thursday {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.friday {
+  margin-left: 150px;
+  margin-top: 10px;
+}
+.saturday {
+  margin-left: 190px;
+  margin-top: 10px;
+}
+.sunday {
+  margin-left: 230px;
+  margin-top: 10px;
+}
+.monday {
+  margin-left: 270px;
+  margin-top: 10px;
+}
+.tuesday {
+  margin-left: 310px;
+  margin-top: 10px;
+}
