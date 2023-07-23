@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+      rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <form id="search-form">
+          <input id="searchInput" type="text" placeholder="Enter city name" />
+          <input
+            type="submit"
+            id="searchBtn"
+            style="border-radius: 8px"
+            value="Search" />
+          <button id="newBtn">Your Location</button>
+        </form>
+
+        <div class="row">
+          <div class="col-7">
+            <div id="city"></div>
+            <div class="today">today</div>
+            <div id="day"></div>
+            <div id="description">sunny</div>
+          </div>
+          <div class="col">
+            <div
+              class="card mb-3"
+              style="
+                max-width: 12rem;
+                background-color: #e6e6e6;
+                border-color: #9f9da3;
+                margin-top: 10px;
+              ">
+              <div class="card-body">
+                <p class="card-text">
+                  Humidity: <span id="humidity"></span>%<br />
+                  Wind: <span id="wind"></span> km/h
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="temperature">
+          <span class="temperature" id="temperature"></span
+          ><span class="degree">&degC</span>
+        </div>
+        <p class="thursday">
+          Monday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;38&deg/16&deg ☀
+        </p>
+        <p class="friday">
+          Tuesday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;36&deg/15&deg ☀
+        </p>
+        <p class="saturday">
+          Wednesday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;36&deg/16&deg ☀
+        </p>
+        <p class="sunday">
+          Thursday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;36&deg/16&deg ☀
+        </p>
+        <p class="monday">
+          Friday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;36&deg/17&deg ☀
+        </p>
+        <p class="tuesday">
+          Saturday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;36&deg/17&deg ☀
+        </p>
+      </div>
+    </div>
+    <script src="java/index.js"></script>
+  </body>
+</html>
