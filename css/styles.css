@@ -4,20 +4,30 @@
   margin: 0 auto;
   max-width: 700px;
   padding-top: 20px;
-  background-color: #f8f4ff;
+  background-color: #ffff;
   border: 2px solid #9f9da3;
   border-radius: 30px;
 }
 .card-body {
-  background-color: #f8f4ff;
+  background-color: #ffff;
 }
 #searchInput {
   border-radius: 8px;
   width: 350px;
 }
+#searchBtn {
+  background-color: #885df1;
+  color: white;
+  padding: 4px 15px;
+  border: none;
+}
 #newBtn {
   border-radius: 15px;
-  margin-left: 10px;
+  border-style: none;
+  margin-left: 2px;
+  padding: 4px 18px;
+  background-color: #ad91f5;
+  color: white;
 }
 #city {
   font-size: 50px;
@@ -56,6 +66,9 @@
   margin-top: 0;
   font-size: 40px;
   font-weight: bold;
+}
+#icon {
+  margin: 0;
 }
 .degree {
   text-decoration: none;
