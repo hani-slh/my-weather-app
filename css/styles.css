@@ -9,7 +9,7 @@
   border-radius: 30px;
 }
 .card-body {
-  background-color: #ffff;
+  background-color: white;
 }
 #searchInput {
   border-radius: 8px;
@@ -17,18 +17,18 @@
   display: inline;
 }
 #searchBtn {
-  background-color: #885df1;
-  color: white;
+  background-color: #fff;
+  color: #885df1;
   padding: 4px 15px;
-  border: none;
+  border: 1px solid #885df1;
 }
 #newBtn {
   border-radius: 15px;
-  border-style: none;
+  color: #885df1;
   margin-left: 2px;
   padding: 4px 18px;
-  background-color: #ad91f5;
-  color: white;
+  background-color: #fff;
+  border: 1px solid #885df1;
 }
 #city {
   font-size: 50px;
@@ -84,54 +84,6 @@
 }
 .active:hover {
   text-decoration: none;
-}
-.thursday,
-.friday,
-.saturday,
-.sunday,
-.monday,
-.tuesday {
-  width: 300px;
-  height: 35px;
-  border: 1px solid #9f9da3;
-  border-radius: 20px;
-  line-height: 30px;
-  border-width: 2px;
-}
-.thursday:hover,
-.friday:hover,
-.saturday:hover,
-.sunday:hover,
-.monday:hover,
-.tuesday:hover {
-  cursor: pointer;
-  font-size: large;
-  font-weight: bold;
-}
-
-.thursday {
-  margin-left: 100px;
-  margin-top: 30px;
-}
-.friday {
-  margin-left: 150px;
-  margin-top: 10px;
-}
-.saturday {
-  margin-left: 190px;
-  margin-top: 10px;
-}
-.sunday {
-  margin-left: 230px;
-  margin-top: 10px;
-}
-.monday {
-  margin-left: 270px;
-  margin-top: 10px;
-}
-.tuesday {
-  margin-left: 310px;
-  margin-top: 10px;
 }
 .code {
   text-decoration: none;
