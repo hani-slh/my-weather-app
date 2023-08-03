@@ -1,20 +1,22 @@
-let now = new Date();
-let today = document.querySelector("#day");
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-let houre = now.getHours();
-let minute = now.getMinutes();
-today.innerHTML = `${day} ${houre}:${minute}`;
+function formatDate(timestamp) {
+  let now = new Date(timestamp);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
+  let houre = now.getHours();
+  let minute = now.getMinutes();
+  return `${day} ${houre}:${minute}`;
+}
 
 function displayWeatherCondition(response) {
+  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -25,8 +27,8 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
-  document.querySelector("#precipitation").innerHTML = "";
-  console.log(response.data);
+  let dayElement = document.querySelector("#day");
+  dayElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function searchCity(city) {
