@@ -13,7 +13,8 @@
 }
 #searchInput {
   border-radius: 8px;
-  width: 350px;
+  width: 300px;
+  display: inline;
 }
 #searchBtn {
   background-color: #885df1;
@@ -75,6 +76,14 @@
   position: relative;
   top: -15px;
   font-size: 18px;
+}
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
 }
 .thursday,
 .friday,

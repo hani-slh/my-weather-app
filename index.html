@@ -20,7 +20,11 @@
     <div class="body">
       <div class="container">
         <form id="search-form">
-          <input id="searchInput" type="text" placeholder="Enter city name" />
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Enter city name"
+            class="form-control" />
           <input
             type="submit"
             id="searchBtn"
@@ -58,7 +62,10 @@
         <div class="temperature">
           <img src="" alt="" id="icon" />
           <span id="temperature"></span
-          ><span class="degree">&degC | &degF</span>
+          ><span class="degree"
+            ><a href="#" id="celsius" class="active">&degC</a> |
+            <a href="#" id="fahrenheit" class="active">&degF</a></span
+          >
         </div>
         <p class="thursday">
           Monday &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;38&deg/16&deg ☀
